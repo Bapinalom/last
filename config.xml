@@ -7,8 +7,15 @@
 	<icon src="www/icon-256.png" width="256" height="256" density="xxxhdpi" />
 	<icon src="www/icon-128.png" width="128" height="128" density="xhdpi" />
 
+	<platform name="android">
+		<splash src="www/icons/default@2x~universal~anyany.png" />
+		<preference name="android-minSdkVersion" value="21" />
+		<preference name="android-targetSdkVersion" value="26" />
+	</platform>
+	
 	<plugin name="cocoon-plugin-ads-android-admob" />
 	<plugin name="cordova-plugin-whitelist" />
+	
 	<preference name="orientation" value="landscape" />
 	<preference name="fullscreen" value="false" />
 	<preference name="DisallowOverscroll" value="true" />
@@ -17,11 +24,4 @@
 
 	<engine name="android" />
 
-	<platform name="android">
-		<splash src="www/icons/default@2x~universal~anyany.png" />
-		<preference name="android-minSdkVersion" value="21" />
-		<preference name="android-targetSdkVersion" value="26" />
-	</platform>
-
-	<preference name="phonegap-version" value="cli-8.0.0" />
 </widget>
